@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
 }
+.body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
 
 body img {
     max-width: 100%;
@@ -75,4 +80,31 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+.caja1, .caja2 {
+    width: 45%; /* Ajusta el tamaño según tus necesidades */
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Estilos para las imágenes dentro de las cajas */
+.caja1 img, .header-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajustes adicionales */
+table {
+    width: 100%;
+}
+
+.caja3 {
+    width: 100%; /* Ajusta el tamaño según tus necesidades */
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }

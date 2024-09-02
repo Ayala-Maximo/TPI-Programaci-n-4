@@ -4,58 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="c.css">
 </head>
 <body>
-    <h2>Formularios en HTML</h2>
+    
 
-    <h3>Texto, Contraseña y Número</h3>
-    <form action="Nueva carpeta/index.html" method="get" enctype="multipart/form-data">
+    <form action="input.html" method="get" enctype="multipart/form-data">
+        <h3>Completar los datos</h3> 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre"><br><br>
         
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+    
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password"><br><br>
-        
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad"><br><br>
-        
-        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
-
-        <h3>Botones de Radio</h3>
-        <label for="genero">Género:</label><br>
-        <input type="radio" id="hombre" name="genero" value="Hombre">
-        <label for="hombre">Hombre</label><br>
-        <input type="radio" id="mujer" name="genero" value="Mujer">
-        <label for="mujer">Mujer</label><br><br>
-
-        <h3>Casillas de Verificación</h3>
-        <label for="intereses">Intereses:</label><br>
-        <input type="checkbox" id="musica" name="intereses" value="Música">
-        <label for="musica">Música</label><br>
-        <input type="checkbox" id="deportes" name="intereses" value="Deportes">
-        <label for="deportes">Deportes</label><br><br>
-
-        <h3>Área de Texto</h3>
-        <label for="comentarios">Comentarios:</label><br>
-        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
-
-        <h3>Lista de Opciones</h3>
-        <label for="pais">País de Nacimiento:</label><br>
-        <select id="pais" name="pais">
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Chile">Chile</option>
-            <option value="Uruguay">Uruguay</option>
-        </select><br><br>
-
-        <h3>Subida de Archivos</h3>
-        <label for="archivo">Subir Archivo:</label>
-        <input type="file" id="archivo" name="archivo"><br><br>
-
-        <h3>Botones</h3>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
+    
+        <div class="button-group">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
     </form>
 </body>
 </html>
