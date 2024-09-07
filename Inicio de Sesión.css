@@ -69,3 +69,7 @@ button:hover {
 .register-link a:hover {
     text-decoration: underline;
 }
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+}
